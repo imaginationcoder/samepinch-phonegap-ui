@@ -648,6 +648,9 @@
 	font-size:18px;
 	color:#ffffff;
 }
+#myNavmenu .navmenu-nav li a:hover, #myNavmenu .navmenu-nav li a:active, #myNavmenu .navmenu-nav li a:focus  {
+	background-color:#000000;
+}
  #myNavmenu .navmenu-nav li a img {
 	 margin-right:10px;
 	 margin-top:-4px;
