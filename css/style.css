@@ -167,6 +167,17 @@ body {
    text-transform:uppercase;
    color:#bbbbbb;
  }
+ 
+ #Wall .profilepic-placeholder img {
+	 margin-top:-4px;
+	 
+ }
+ #Wall .profilepic-img img {
+	 border-radius:100%;
+	 width:42px;
+	 height:42px;
+	 border: 1px solid #e8e8e8;
+ }
  .profile-name {
 	 color:#444444;
 	 font-size:15px;
