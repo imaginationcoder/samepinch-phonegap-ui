@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+<title>Starter Template for Bootstrap</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jasny-bootstrap.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="Wall">
+
+
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-sp">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-3"> 
+          <button type="button" class="navbar-toggle mytoggle-menu" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+        
+        </div>
+        <div class="col-md-6 col-xs-6"><img src="images/header-icon-samepinch.png" class="img-responsive" width="47" height="28" alt=""/></div>
+        <div class="col-md-3 col-xs-3 nopadding-left"> <a href="addpost.html" class="pull-right"><img src="images/icon-createpost.png"  width="26" height="26" alt=""/></a> <a href="#" class="pull-right" id="search-toggle-btn"><img src="images/search.png" width="26" height="26" alt=""/></a> </div>
+      </div>
+    </div>
+  </nav>
+  
+    <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <a class="navmenu-brand" href="#"><img src="images/profile-img.png"  alt=""/>  <br>  Johnson</a>
+  <ul class="nav navmenu-nav">
+    <li><a href="#"> <img src="images/menu-home.png" width="26" height="26" alt=""/>  Wall</a></li>
+    <li><a href="#"> <img src="images/icon-createpost.png" width="26" height="26" alt=""/>  Create Post</a></li>
+    <li><a href="#"> <img src="images/menu-settings.png" width="26" height="26" alt=""/>  Settings</a></li>
+    <li><a href="#"> <img src="images/icon-menu-mtags.png" width="26" height="26" alt=""/>  Manage Tags</a></li>
+    <li><a href="#"> <img src="images/icon-menu-about.png" width="26" height="26" alt=""/>  About</a></li>
+    <li><a href="#"> <img src="images/menu-logout.png" width="26" height="26" alt=""/> Logout</a></li>
+  </ul>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="search-bar"> 
+        
+          <div class="container">
+         
+         <div class="search-ph">
+           <img src="images/icon-search-dark.png" width="20" height="20" alt=""/> search...
+         </div>
+         
+         <div class="search-textfield">
+            <img src="images/icon-search-dark.png" width="20" height="20" alt=""/> <input type="text" placeholder="search..." autofocus class="search-tf-style"> <span class="glyphicon glyphicon-remove-circle search-clear"></span>
+         </div>
+         
+         
+         
+          </div>
+        </div>
+    </div>
+    </div>
+
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="favorite-bar"> <a href="favorites.html"><span class="glyphicon glyphicon-star"></span></a> </div>
+    </div>
+  </div>
+  
+<!--<div class="container">
+  <div class="row">
+    <div class="row"> 
+    
+      <div class="sp-spinner"><i class="fa fa-spinner fa-spin"></i></div>
+    
+      </div>
+  </div>
+</div>-->
+  
+  
+  <div class="container mtop20">
+    <div class="row">
+      <div class="col-md-12">
+      
+         <!-- post box --> 
+       <div class="wall-post-box-wrap">
+        <div class="wall-post-box">
+          <div class="profile-pic-wrap profilepic-placeholder">JD</div>
+          <div class="profile-name pull-left mleft50 mtop5">David</div>
+          <div class="pull-right mtop5 icon-counts"> <img src="images/icon-view-count.png" width="26" height="15" alt=""/> <span class="mright5">10</span> <img src="images/icon-upvote-gray.png" width="21" height="21" alt=""/> <span class="mright5">10</span> <img src="images/time.png" width="20" height="20" alt=""/> <span class="mright5 time-style">05/26/2015</span> </div>
+          <div class="clearfix"></div>
+          <div class="post-content mleft50">
+            <p>This classy dessert from Michel Roux
+              is delicious, low in fat, and counts as 
+              one of your 5-a-day!</p>
+            <img src="images/profile-img.png"/> </div>
+          <hr>
+          <ul class="tags">
+            <li>#health</li>
+            <li>#yoga</li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="comments">
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><span><img src="images/comment_Count.png" width="22" height="26" alt=""/><span class="count">10</span></span></li>
+          </ul>
+        </div>
+       </div>
+       
+       
+       
+        <!-- post box --> 
+       <div class="wall-post-box-wrap">
+        <div class="wall-post-box">
+          <div class="profile-pic-wrap profilepic-placeholder">JD</div>
+          <div class="profile-name pull-left mleft55 mtop5">David</div>
+          <div class="pull-right mtop5 icon-counts"> <img src="images/icon-view-count.png" width="26" height="15" alt=""/> <span class="mright5">10</span> <img src="images/icon-upvote-gray.png" width="21" height="21" alt=""/> <span class="mright5">10</span> <img src="images/time.png" width="20" height="20" alt=""/> <span class="mright5 time-style">05/26/2015</span> </div>
+          <div class="clearfix"></div>
+          <div class="post-content mleft55">
+            <p>This classy dessert from Michel Roux
+              is delicious, low in fat, and counts as 
+              one of your 5-a-day!</p>
+            <img src="images/profile-img.png"/> </div>
+          <hr>
+          <ul class="tags">
+            <li>#health</li>
+            <li>#yoga</li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="comments">
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><span><img src="images/comment_Count.png" width="22" height="26" alt=""/><span class="count">10</span></span></li>
+          </ul>
+        </div>
+       </div>
+       
+       
+        <!-- post box --> 
+       <div class="wall-post-box-wrap">
+        <div class="wall-post-box">
+          <div class="profile-pic-wrap profilepic-placeholder">JD</div>
+          <div class="profile-name pull-left mleft55 mtop5">David</div>
+          <div class="pull-right mtop5 icon-counts"> <img src="images/icon-view-count.png" width="26" height="15" alt=""/> <span class="mright5">10</span> <img src="images/icon-upvote-gray.png" width="21" height="21" alt=""/> <span class="mright5">10</span> <img src="images/time.png" width="20" height="20" alt=""/> <span class="mright5 time-style">05/26/2015</span> </div>
+          <div class="clearfix"></div>
+          <div class="post-content mleft55">
+            <p>This classy dessert from Michel Roux
+              is delicious, low in fat, and counts as 
+              one of your 5-a-day!</p>
+            <img src="images/profile-img.png"/> </div>
+          <hr>
+          <ul class="tags">
+            <li>#health</li>
+            <li>#yoga</li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="comments">
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><img src="images/profile-img.png" /></li>
+            <li><span><img src="images/comment_Count.png" width="22" height="26" alt=""/><span class="count">10</span></span></li>
+          </ul>
+        </div>
+       </div>
+        
+
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+  <div class="row">
+    <div class="row"> 
+    
+      <div class="sp-spinner"><i class="fa fa-spinner fa-spin"></i></div>
+    
+      </div>
+  </div>
+</div>
+  
+  <!-- /.container --> 
+  
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="<strong></strong>js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/jasny-bootstrap.js"></script>
+<script>
+$('.navmenu').offcanvas({autohide:true, toggle:false})
+
+
+
+$(document).ready(function() {
+	
+	$("#search-toggle-btn").click(function() {
+		   $(".search-bar").show();
+		})
+	
+	
+	  $(".search-bar").click(function() {
+		     $(".search-ph").hide();
+			 $(".search-textfield").show();
+		  })
+	
+	})
+</script>
+</body>
+</html>
