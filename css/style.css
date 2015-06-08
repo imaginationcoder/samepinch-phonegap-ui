@@ -171,7 +171,9 @@ body {
 	float:left;
 }
 
-#Wall .profilepic-placeholder, #viewPost #toppanel .profilepic-placeholder, #Profile .profilepic-placeholder, #Wall .comments .profilepic-placeholder {
+#Wall .profilepic-placeholder, #viewPost #toppanel .profilepic-placeholder, #Profile .profilepic-placeholder, #Wall .comments .profilepic-placeholder, #addPost .dropdown-toggle .profilepic-placeholder, #addPost .dropdown-menu .profilepic-placeholder, #viewPost .dropdown-menu .profilepic-placeholder,
+#viewPost .dropdown-toggle .profilepic-placeholder
+  {
 
    background-color: #ffffff;
    border-radius: 100%;
@@ -183,6 +185,21 @@ body {
    letter-spacing: 0px; 
    text-transform:uppercase;
    color:#bbbbbb;
+ }
+ 
+ #addPost .dropdown-toggle .profilepic-placeholder, #viewPost .dropdown-toggle .profilepic-placeholder  {
+	 width:22px;
+	 height:22px;
+	 font-size:10px;
+	 padding: 4px 0;
+	 display:inline-block;
+ }
+  #addPost .dropdown-menu .profilepic-placeholder, #viewPost .dropdown-menu .profilepic-placeholder  {
+	 width:30px;
+	 height:30px;
+	 font-size:13px;
+	 display:inline-block;
+	 padding:5px 0;
  }
  #Wall .comments .profilepic-placeholder {
 	 width:24px;
@@ -225,7 +242,8 @@ body {
 	 border-radius:100%;
 	 width:42px;
 	 height:42px;
-	 border: 1px solid #e8e8e8;
+	 /*border: 1px solid #e8e8e8;*/
+	 border:1px solid transparent;
  }
  #Profile .profilepic-img img {
 	 width:95px;
@@ -234,6 +252,18 @@ body {
 	 margin-top:20px;
 	 
  }
+ #addPost .dropdown-toggle.profilepic-img img {
+	 width:22px;
+	 height:22px;
+	 border-radius:100%;
+}
+ 
+ #addPost .dropdown-menu.profilepic-img img {
+	 width:30px;
+	 height:30px;
+	 border-radius:100%;
+}
+ 
  #viewPost .input-comment .dropdown-menu.profilepic-img img {
      width:30px;
 	 height:30px;
@@ -402,7 +432,7 @@ body {
 	 border:none;
 	 border-bottom:1px solid #e7e7e7;
 	 background-color:transparent;
-	 height:30px;
+	 height:35px;
 	 width:100%;
 	 outline:none;
  }
@@ -410,6 +440,7 @@ body {
 	 background-color:#c52128;
 	 border-radius:0px;
 	 border:none;
+	 padding:10px 0;
  }
  
  
@@ -565,7 +596,7 @@ body {
 	background-position: 0 -25px;
 }
 #addPost label.css-label, #Signup label.css-label, #manageTags label.css-label {
-	background-image: url(../images/checkmark.png);
+	background-image: url(../img/checkmark.png);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -819,7 +850,7 @@ top:-11px;
 }
 
 .comment-bubble-count {
-  background-image: url(../images/comment_count.png);
+  background-image: url(../img/comment_count.png);
   width: 22px;
   height: 26px;
   font-size: 10px;
@@ -887,7 +918,7 @@ margin-right:10px;
 }
 
 #addPost .selecttags-scroll {
-	min-height:100px;
+	height:200px;
 	overflow:auto;
 }
 	
