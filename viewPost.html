@@ -56,7 +56,11 @@
                 <div class="tag">#politics</div>
               </div>
               <div class="pull-right col-md-2 col-xs-4">
-                <div class="pull-right"> <a href="#"><img src="img/viewpost-flag.png" width="32" height="32" alt="" onmouseover="this.src='images/viewpost-flag-active.png' " onmouseout="this.src='images/viewpost-flag.png'" /></a> <a href="#"> <img src="img/viewpost-like.png" width="32" height="32" alt="" onmouseover="this.src='images/viewpost-like-active.png' " onmouseout="this.src='images/viewpost-like.png'"/> </a> </div>
+                <div class="pull-right"> <a href="#"><img src="img/viewpost-flag.png" width="32" height="32" alt="" onmouseover="this.src='img/viewpost-flag-active.png' " onmouseout="this.src='img/viewpost-flag.png'" /></a> 
+                
+                <!--<a href="#"> <img src="img/viewpost-like.png" width="32" height="32" alt="" onmouseover="this.src='img/viewpost-like-active.png' " onmouseout="this.src='img/viewpost-like.png'"/> </a> -->
+                  <div class="viewPostLikeActive"><img src="img/viewpost-like-active.png" width="32" height="32" alt=""/></div>
+                </div>
               </div>
             </div>
           </div>
@@ -66,7 +70,11 @@
           <ul>
             <li>
               <div class="row">
-                <div class="col-md-1 col-xs-1 col-sm-1"><img src="img/tag.png" class="comment-profile" alt=""/></div>
+                <div class="col-md-1 col-xs-1 col-sm-1 profilepic-img">
+                 <div class="profilepic-placeholder">jd</div>
+
+                </div>
+                
                 <div class="col-md-10 col-xs-6 col-sm-9 pull-left mleft">
                   <div>Nice pinch</div>
                   <div class="time">1 day ago</div>
@@ -80,21 +88,48 @@
                   </span> </div>
               </div>
             </li>
-            <li>
+            
+            
+             <li>
               <div class="row">
-                <div class="col-md-1 col-xs-1 col-sm-1"><img src="img/tag.png" class="comment-profile" alt=""/></div>
+                <div class="col-md-1 col-xs-1 col-sm-1 profilepic-img">
+                 <img src="img/profile-img.png" alt=""/> 
+                </div>
+                
                 <div class="col-md-10 col-xs-6 col-sm-9 pull-left mleft">
                   <div>Nice pinch</div>
                   <div class="time">1 day ago</div>
                 </div>
                 <div class="col-md-1 col-xs-3 col-sm-2 nopadding-left pull-right"> <span class="light-color"> <img src="img/icon-upvote-gray.png" width="18" height="18" alt=""/> 4 </span> <span class="pull-right"> <span data-toggle="dropdown" aria-expanded="false" class="glyphicon comment-more glyphicon-option-vertical"></span>
                   <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                    <span class="glyphicon glyphicon-triangle-bottom caret-dropdown"></span>
-                    <li><a href="#">Post as anonymous <img src="img/ananymous-placeholder.png" width="30" height="30" alt=""> </a></li>
+                    <span class="glyphicon glyphicon-triangle-top caret-dropdown"></span>
+                    <li><a href="#">Like </a></li>
+                    <li><a href="#">Flag </a></li>
                   </ul>
                   </span> </div>
               </div>
             </li>
+            
+             <li>
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-1 profilepic-img">
+                 <div class="profilepic-placeholder"> <img src="img/ananymous-placeholder.png" alt=""/></div>
+                </div>
+                
+                <div class="col-md-10 col-xs-6 col-sm-9 pull-left mleft">
+                  <div>Nice pinch</div>
+                  <div class="time">1 day ago</div>
+                </div>
+                <div class="col-md-1 col-xs-3 col-sm-2 nopadding-left pull-right"> <span class="light-color"> <img src="img/icon-upvote-gray.png" width="18" height="18" alt=""/> 4 </span> <span class="pull-right"> <span data-toggle="dropdown" aria-expanded="false" class="glyphicon comment-more glyphicon-option-vertical"></span>
+                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <span class="glyphicon glyphicon-triangle-top caret-dropdown"></span>
+                    <li><a href="#">Like </a></li>
+                    <li><a href="#">Flag </a></li>
+                  </ul>
+                  </span> </div>
+              </div>
+            </li>
+            
           </ul>
         </div>
       </div>

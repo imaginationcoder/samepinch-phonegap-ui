@@ -51,7 +51,7 @@
                     <span class="glyphicon glyphicon-triangle-top caret-dropdown"></span>
                     <li><a href="#">Post as anonymous  <img src="img/ananymous-placeholder.png"  alt=""> </a></li>
                     <li><a href="#">Post as John Doe  <img src="img/profile-img.png"  alt=""> </a></li>
-                    <li><a href="#">Post as John Doe  <div class="profilepic-placeholder">jd</div> </li>
+                    <li><a href="#">Post as John Doe  <div class="profilepic-placeholder">jd</div> </a></li>
                     
                   </ul>
           </div>
@@ -72,7 +72,7 @@
   
       <form>
         <div id="content-div-wrapper">
-          <div contenteditable="" id="content-div"><input  class="hidden-textfield" type="text" placeholder="Write description"></div>
+          <div contenteditable="true" id="content-div"><input type="text" class="hidden-textfield" placeholder="Write description"></div>
           <button id="imageButton" class="btn-rounded mbottom mtop"><span class="glyphicon glyphicon-camera"></span></button>
           <input type="file" id="imageUpload">
         </div>
@@ -205,6 +205,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script>
+
 $(document).ready(function() {
 
 
@@ -213,12 +214,13 @@ $(this).next('.dropdown-menu').slideToggle(500);
 });*/
 
 
-$(document).ready(function() {
+
 	   $("#addPost #content-div").mousedown(function() {
 		   
 		   $("#addPost .hidden-textfield").hide();
+		   
 		   })
-	})
+	
 	
 	
 	$("#addPost ul.tags-list li").click(function() {
