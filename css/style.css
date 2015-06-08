@@ -947,12 +947,17 @@ margin-right:10px;
 	height:200px;
 	overflow:auto;
 }
-.viewPostLikeActive {
+.viewPostLike, .viewPostLikeActive  {
 	width:32px;
 	height:32px;
 	float:right;
 	margin-left:4px;
     display:block;
+	background-image:url(../img/viewpost-like.png);
+}
+.viewPostLikeActive  { 
+ background-image:url(../img/viewpost-like-active.png);
+
 }
 
 	
