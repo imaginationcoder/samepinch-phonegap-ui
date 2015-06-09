@@ -19,8 +19,16 @@
 <link href='http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="bg-white">
-<div id="viewPost">
+<style>
+ html, body {
+        height: 100%;
+        margin: 0px;
+    }
+</style>
+
+<body class="bg-white ">
+
+<div id="viewPost" class="display-none">
   <nav class="navbar navbar-inverse navbar-fixed-top navbar-sp">
     <div class="container">
       <div class="row">
@@ -161,7 +169,7 @@
               <span class="glyphicon glyphicon-triangle-bottom caret-dropdown"></span>
               <li><a href="#">Comment as anonymous  <img src="img/ananymous-placeholder.png" alt=""/></a></li>
               <li><a href="#">Comment as John Doe  <img src="img/profile-img.png" alt=""/></a></li>
-              <li><a href="#">Comment as John Doe  <div class="profilepic-placeholder">jd</div> </li>
+              <li><a href="#">Comment as John Doe  <div class="profilepic-placeholder">jd</div> </a></li>
             </ul>
           </div>
         </div>
@@ -169,6 +177,70 @@
     </div>
   </div>
 </div>
+
+
+<!--edit comment page -->
+
+<div id="editComment" class="edit-comment-bg">
+
+<div id="addPost">
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-sp">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-2"> 
+           <span class="glyphicon glyphicon-menu-left back"></span>
+        
+        </div>
+        <div class="col-md-6 col-xs-6 heading">Edit Comment</div>
+        <div class="col-md-3 col-xs-4 nopadding-left"> 
+            
+            <div class="btn-group pull-right">
+              <button type="button" class="btn btn-default">Comment as</button>
+                  <button type="button" class="btn btn-default dropdown-toggle profilepic-img" data-toggle="dropdown" aria-expanded="false">
+                    <!--<div class="profilepic-placeholder">
+                     
+                     jd  
+                     </div>-->
+                     
+                    <img src="img/ananymous-placeholder.png" alt="">
+                    <!--<img src="img/profile-img.png" alt=""/>-->
+                    
+                     <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu profilepic-img" role="menu">
+                    <span class="glyphicon glyphicon-triangle-top caret-dropdown"></span>
+                    <li><a href="#">Post as anonymous  <img src="img/ananymous-placeholder.png"  alt=""> </a></li>
+                    <li><a href="#">Post as John Doe  <img src="img/profile-img.png"  alt=""> </a></li>
+                    <li><a href="#">Post as John Doe  <div class="profilepic-placeholder">jd</div> </a></li>
+                    
+                  </ul>
+          </div>
+        
+         </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container ptop30">
+    <div class="row">
+       <div class="col-md-12">
+           <textarea class="edit-comment-textarea"></textarea>
+       
+       </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+
+
+</div>
+
+
 
 <!-- Bootstrap core JavaScript
     ================================================== --> 
