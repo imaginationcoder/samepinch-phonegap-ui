@@ -76,7 +76,7 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="favorite-bar"> <a href="favorites.html" class="fav-active"><span class="glyphicon glyphicon-star"></span></a> </div>
+      <div class="favorite-bar"> <a href="#" id="hello"><span class="glyphicon glyphicon-star"></span></a> </div>
     </div>
   </div>
   
@@ -90,7 +90,7 @@
   </div>
 </div>-->
   
-  <div class="container mtop20 mbottom20">
+  <div class="container mtop40 mbottom20">
     <div class="row">
       <div class="col-md-12"> 
         
@@ -99,7 +99,7 @@
           <div class="wall-post-box">
             <div class="profile-pic-wrap profilepic-placeholder">JD</div>
             <div class="profile-name pull-left mleft50 mtop5">David</div>
-            <div class="pull-right mtop5 icon-counts"> <img src="img/icon-view-count.png" width="26" height="15" alt=""/> <span class="mright5">10</span> <img src="img/icon-upvote-gray.png" width="21" height="21" alt=""/> <span class="mright5">10</span> <img src="img/time.png" width="20" height="20" alt=""/> <span class="mright5 time-style">05/26/2015</span> </div>
+            <div class="pull-right mtop5 icon-counts"> <img src="img/icon-view-count.png" width="26" height="15" alt=""/> <span>10</span> <img src="img/icon-upvote-gray.png" width="21" height="21" alt=""/> <span>10</span> <img src="img/time.png" width="20" height="20" alt=""/> <span class="time-style">05/26/2015</span> </div>
             <div class="clearfix"></div>
             <div class="post-content mleft50">
               <p>This classy dessert from Michel Roux
@@ -222,6 +222,17 @@ $(document).ready(function() {
 		  })
 	
 	})
+	
+	
+		$('#hello').on('click',function(){
+		if($(this).hasClass('fav-active')){
+			$(this).removeClass('fav-active')
+		}else{
+			$(this).addClass('fav-active')
+		}
+	})
+	
+	
 </script>
 </body>
 </html>
